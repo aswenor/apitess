@@ -160,8 +160,8 @@ def submit_search():
 
     try:
         search_params = {
-            'source': TextOptions(source_text, source['units']),
-            'target': TextOptions(target_text, target['units']),
+            'source': TextOptions(source_text, source['units'] ''', sourceDivision''' ),
+            'target': TextOptions(target_text, target['units'] ''', targetDivision'''),
         }
         search_params.update(
             {key: method[key]
